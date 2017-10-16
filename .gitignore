@@ -1,8 +1,9 @@
 # Dependency directories
 node_modules/
 
-# Build folder
+# Build folders
 build/
+out/
 
 # Yarn
 yarn-error.log
