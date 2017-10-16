@@ -1,3 +1,4 @@
+// @flow
 import React from 'react'
 import withPosts from 'nextein/posts'
 import { Content } from 'nextein/post'
