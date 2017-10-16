@@ -4,6 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "nextein": "^1.0.0-beta24"
+    "next": "4.0.1",
+    "nextein": "^1.0.0-beta24",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "scripts": {
+    "dev": "nextein"
   }
 }
