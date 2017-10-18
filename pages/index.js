@@ -3,8 +3,9 @@ import React from 'react'
 import withPosts from 'nextein/posts'
 import { Content } from 'nextein/post'
 import Link from 'nextein/link'
+import withLayout from '../components/Layout'
 
-export default withPosts(({ posts }) => {
+export default withLayout(withPosts(({ posts }) => {
   return (
     <main>
       {
@@ -20,4 +21,4 @@ export default withPosts(({ posts }) => {
       }
     </main>
   )
-})
+}))
