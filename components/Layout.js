@@ -1,26 +1,40 @@
 // @flow
 import React, { Component } from 'react'
+import MetaHead from './MetaHead'
+import Header from './Header'
+import Footer from './Footer'
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
-}
-
-export default (Wrapped) => {
-  return class extends Component {
-
+export default (WrappedComponent: any) => {
+  class WithLayout extends Component<Object> {
     static async getInitialProps(...args) {
-      const wrappedInitial = Wrapped.getInitialProps
+      const wrappedInitial = WrappedComponent.getInitialProps
       const wrapped = wrappedInitial ? await wrappedInitial(...args) : {}
 
-      return wrapped;
+      return wrapped
     }
 
     render() {
-      return <div style={layoutStyle}>
-        <Wrapped {...this.props} />
-      </div>
+      return (
+        <div id="layout">
+          <style jsx>{`
+            #layout {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: nowrap;
+              align-items: stretch;
+              width: 35rem;
+              max-width: 100vw;
+              max-width: calc(100vw - 2.5rem);
+            }
+          `}</style>
+          <MetaHead title={this.props.title} />
+          <Header skipContent={this.props.skipHeader}/>
+          <WrappedComponent {...this.props} />
+          <Footer />
+        </div>
+      )
     }
   }
+  WithLayout.displayName = `WithLayout(${WrappedComponent.displayName})`;
+  return WithLayout
 }
