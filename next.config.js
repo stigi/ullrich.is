@@ -6,6 +6,7 @@ module.exports = nexteinConfig({
   exportPathMap: () => ({
     '/blog': { page: '/blog' },
     '/experienced': { page: '/portfolio' },
+    '/here-to-help!': { page: '/hire-me' },
     '/official': { page: '/imprint' }
   })
   // place your next config in here!
