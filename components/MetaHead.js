@@ -8,7 +8,7 @@ type PropsType = {
 
 export default ({title = "ullrich.is ✌️" }: PropsType) => {
   return (
-    <Head>
+    <div>
       <style jsx global>{`
         * {
           margin: 0;
@@ -54,20 +54,22 @@ export default ({title = "ullrich.is ✌️" }: PropsType) => {
         }
       `}
       </style>
-      <title>{ title }</title>
-      <meta charSet='utf-8' />
-      <meta httpEquiv='content-language' content='en-us' />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <meta name='author' content='Ullrich Schäfer' />
-      <meta name='keywords' content='Ullrich Schäfer, Ullrich Schaefer, Ullrich Schafer, iOS, Objective-C, Swift, ReactNative, React, Javascript, ES6, Android, nxtbgthng, evenly, Facebook, Soundcloud, Arte, Digital Concert Hall' />
+      <Head>
+        <title>{ title }</title>
+        <meta charSet='utf-8' />
+        <meta httpEquiv='content-language' content='en-us' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name='author' content='Ullrich Schäfer' />
+        <meta name='keywords' content='Ullrich Schäfer, Ullrich Schaefer, Ullrich Schafer, iOS, Objective-C, Swift, ReactNative, React, Javascript, ES6, Android, nxtbgthng, evenly, Facebook, Soundcloud, Arte, Digital Concert Hall' />
 
-      <meta property='og:title' content={title} />
-      <meta property='og:type' content='website' />
-      <meta property='og:site_name' content='ullrich.is' />
-      <meta property='og:url' content='http://ullrich.is' />
-      <meta property='og:description' content='Ullrich is a mobile software engineer and your best friend.' />
-      <meta property='og:image' content='http://ullrich.is/static/ulli.jpg' />
-      <meta property='og:image:alt' content='Ullrich wearing a cap, standing on the beach and blinking into the sun.' />
-    </Head>
+        <meta property='og:title' content={title} />
+        <meta property='og:type' content='website' />
+        <meta property='og:site_name' content='ullrich.is' />
+        <meta property='og:url' content='http://ullrich.is' />
+        <meta property='og:description' content='Ullrich is a mobile software engineer and your best friend.' />
+        <meta property='og:image' content='http://ullrich.is/static/ulli.jpg' />
+        <meta property='og:image:alt' content='Ullrich wearing a cap, standing on the beach and blinking into the sun.' />
+      </Head>
+    </div>
   )
 }
