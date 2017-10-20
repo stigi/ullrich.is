@@ -16,7 +16,7 @@ export default () => {
     `}</style>
     <p>
       {/* This site was build with <Link href="https://reactjs.org"><a>React</a></Link> and <Link href="http://nextein.now.sh"><a>nextein</a></Link>.&nbsp; */}
-      <Link href="/official"><a>Imprint</a></Link>
+      <Link as="/official" href="/imprint"><a>Imprint</a></Link>
     </p>
   </footer>
 }

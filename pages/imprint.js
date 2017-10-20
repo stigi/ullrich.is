@@ -40,10 +40,10 @@ export default withLayout(imprints(({ posts }) => (
       {
         posts
         .map((post, idx) =>
-          <article className='imprint' key={`post-${idx}`}>
-            <Content {...post} />
+          <article className='imprint' key={`article-${idx}`}>
+            <Content key={`content-${idx}`} {...post} />
           </article>)
-        .reduce((prev, curr) => [prev, <hr />, curr])
+        .reduce((prev, curr) => [prev, <hr key='dummy' />, curr])
       }
     </main>
   )

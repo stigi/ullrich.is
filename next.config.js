@@ -4,7 +4,8 @@ const nexteinConfig = require('nextein/config').default
 module.exports = nexteinConfig({
   distDir: 'build',
   exportPathMap: () => ({
-    '/blog': { page: '/blog' }
+    '/blog': { page: '/blog' },
+    '/official': { page: '/imprint' }
   })
   // place your next config in here!
 })
