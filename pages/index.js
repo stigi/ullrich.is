@@ -61,7 +61,7 @@ class Index extends Component<any> {
       </div>
       <p>I'm a mobile software engineer with <Link as="/experienced" href="/portfolio"><a>9 years of experience</a></Link> in the industry.</p>
       <p>I'm available for <Link as="/here-to-help!" href="/hire-me"><a>contract work</a></Link>. Let's talk about what I can do for you.</p>
-      <p>You can check out <Link href="/blogging"><a>my blog</a></Link> where I write about Swift, JavaScript, ReactNative and mobile in general.</p>
+      <p>You can check out <Link as="/blogging" href="/blog"><a>my blog</a></Link> where I write about Swift, JavaScript, ReactNative and mobile in general.</p>
       <p>✌️</p>
     </main>
   }
