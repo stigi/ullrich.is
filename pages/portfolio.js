@@ -5,7 +5,7 @@ import withLayout from '../components/Layout'
 
 export default withLayout(({}) => (
     <main>
-      <h1>Experience</h1>
+      <h1>Portfolio</h1>
     </main>
   )
 )
