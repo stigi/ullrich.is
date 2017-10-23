@@ -19,7 +19,7 @@ export default ({title = "ullrich.is ✌️" }: PropsType) => {
           color: rgb(40, 40, 40);
           background-color: rgb(245, 245, 245);
           font-size: 20px;
-          line-height: 27px;
+          line-height: 1.7rem;
           font-weight: 200;
           font-family:
             /* https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/ */
@@ -30,7 +30,7 @@ export default ({title = "ullrich.is ✌️" }: PropsType) => {
         @media (max-width: 768px) {
           html {
             font-size: 15px;
-            line-height: 20px;
+            line-height: 1.4rem;
           }
         }
         body {
@@ -51,6 +51,32 @@ export default ({title = "ullrich.is ✌️" }: PropsType) => {
           -moz-hyphens: auto;
           -ms-hyphens: auto;
           hyphens: auto;
+        }
+        article p {
+          margin-top: 0.8rem;
+          margin-bottom: 0.8rem;
+        }
+        h1,h2,h3 {
+          font-weight: 400;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        h1 {
+          font-size: 1.4rem;
+        }
+        h2 {
+          font-size: 1.1rem;
+        }
+        h3 {
+          font-size: 0.9rem;
+        }
+        li {
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+        li h1 {
+          font-size: 1rem;
+          font-weight: 300;
         }
       `}
       </style>
