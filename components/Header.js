@@ -34,9 +34,29 @@ export default ({skipContent = false}: PropsType) => {
         border-bottom: 1px dashed;
         margin-bottom: 0px;
       }
+      #brand {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      #logo {
+        height: 22px;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+      }
+      @media (max-width: 768px) {
+        #logo {
+          height: 18px;
+        }
+      }
     `}</style>
     { !skipContent &&
-      <Link href="/"><a>ullrich.is</a></Link> }
+      <div id="brand">
+        <img id="logo" src="/static/logo-tiny.png" srcSet="/static/logo-tiny@2x.png 2x" />
+        &nbsp;
+        <Link href="/"><a>ullrich.is</a></Link>
+      </div> }
     {!skipContent &&
       <nav>
         <ul>

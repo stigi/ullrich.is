@@ -3,7 +3,6 @@ import React, {Component} from 'react'
 import Link from 'nextein/link'
 import withLayout from '../components/Layout'
 
-
 export default withLayout(({}) => (
     <main>
       <style jsx>{`
