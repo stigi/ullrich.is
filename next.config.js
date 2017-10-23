@@ -7,7 +7,8 @@ module.exports = nexteinConfig({
     '/blogging': { page: '/blog' },
     '/experienced': { page: '/portfolio' },
     '/here-to-help!': { page: '/hire-me' },
-    '/official': { page: '/imprint' }
+    '/official': { page: '/imprint' },
+    '/reachable' :{ page: '/contact' }
   })
   // place your next config in here!
 })

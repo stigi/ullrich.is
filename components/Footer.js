@@ -10,13 +10,15 @@ export default () => {
         line-height: 14px;
         margin-top: 3rem;
       }
-      a {
+      a,p {
         color: rgb(200, 200, 200);
       }
     `}</style>
     <p>
       {/* This site was build with <Link href="https://reactjs.org"><a>React</a></Link> and <Link href="http://nextein.now.sh"><a>nextein</a></Link>.&nbsp; */}
       <Link as="/official" href="/imprint"><a>Imprint</a></Link>
+      &nbsp;| &nbsp;
+      <Link as="/reachable" href="/contact"><a>Contact</a></Link>
     </p>
   </footer>
 }
