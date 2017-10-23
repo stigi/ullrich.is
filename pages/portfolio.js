@@ -1,11 +1,4 @@
 // @flow
-import React, {Component} from 'react'
-import withLayout from '../components/Layout'
+import contentFor from '../components/ContentPage'
 
-
-export default withLayout(({}) => (
-    <main>
-      <h1>Portfolio</h1>
-    </main>
-  )
-)
+export default contentFor('portfolio')
