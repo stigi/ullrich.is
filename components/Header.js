@@ -29,6 +29,7 @@ export default ({skipContent = false}: PropsType) => {
       a {
         border: none;
         margin-bottom: 1px;
+        color: rgb(100,100,100);
       }
       a:hover {
         border-bottom: 1px dashed;
@@ -60,9 +61,9 @@ export default ({skipContent = false}: PropsType) => {
     {!skipContent &&
       <nav>
         <ul>
-          <li><a>A</a></li>
-          <li><a>B</a></li>
-          <li><a>C</a></li>
+          <li>
+            <Link as="/reachable" href="/contact"><a>Contact</a></Link>
+          </li>
         </ul>
       </nav>
     }
