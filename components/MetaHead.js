@@ -1,6 +1,7 @@
 // @flow
 import React from 'react'
 import Head from 'next/head'
+import FavIcon from './FavIcon'
 
 type PropsType = {
   title: string,
@@ -96,6 +97,7 @@ export default ({title = "ullrich.is ✌️" }: PropsType) => {
         <meta property='og:image' content='http://ullrich.is/static/ulli.jpg' />
         <meta property='og:image:alt' content='Ullrich wearing a cap, standing on the beach and blinking into the sun.' />
       </Head>
+      <FavIcon />
     </div>
   )
 }
