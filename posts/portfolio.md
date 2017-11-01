@@ -1,6 +1,7 @@
 ---
 title: Portfolio
 category: portfolio
+permalink: /dev/null
 ---
 
 # Portfolio

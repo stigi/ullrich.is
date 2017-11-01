@@ -1,6 +1,7 @@
 ---
 title: Imprint
 category: imprint
+permalink: /dev/null
 ---
 
 # Impressum

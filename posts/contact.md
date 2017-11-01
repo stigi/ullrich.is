@@ -1,6 +1,7 @@
 ---
 title: Contact
 category: contact
+permalink: /dev/null
 ---
 
 # 👋 Let's talk!

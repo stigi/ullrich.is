@@ -1,6 +1,7 @@
 ---
 title: Hire Me
 category: hire-me
+permalink: /dev/null
 ---
 
 # Let's work together 💪
