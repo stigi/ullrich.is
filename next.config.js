@@ -1,5 +1,7 @@
 // @flow
 const nexteinConfig = require('nextein/config').default
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const { ANALYZE } = process.env
 
 module.exports = nexteinConfig({
   distDir: 'build',
@@ -9,6 +11,15 @@ module.exports = nexteinConfig({
     '/here-to-help!': { page: '/hire-me' },
     '/official': { page: '/imprint' },
     '/reachable': { page: '/contact' }
-  })
-  // place your next config in here!
+  }),
+  webpack: function (config) {
+    if (ANALYZE) {
+      config.plugins.push(new BundleAnalyzerPlugin({
+        analyzerMode: 'server',
+        analyzerPort: 8888,
+        openAnalyzer: true
+      }))
+    }
+    return config
+  }
 })
