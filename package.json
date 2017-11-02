@@ -6,7 +6,7 @@
   "dependencies": {
     "cross-env": "^5.1.1",
     "next": "4.0.1",
-    "nextein": "^1.0.0-beta24",
+    "nextein": "1.0.0-beta25",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "webpack-bundle-analyzer": "^2.9.0"
