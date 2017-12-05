@@ -1,4 +1,4 @@
-// flow-typed signature: d86824d89293b658bd707e04fa9e64c0
+// flow-typed signature: 43c8d4e17ea5245a95ad6dc2a1b47e3f
 // flow-typed version: <<STUB>>/next_v4.0.1/flow_v0.57.2
 
 /**
@@ -54,10 +54,6 @@ declare module 'next/dist/client/webpack-hot-middleware-client' {
   declare module.exports: any;
 }
 
-declare module 'next/dist/lib/EventEmitter' {
-  declare module.exports: any;
-}
-
 declare module 'next/dist/lib/app' {
   declare module.exports: any;
 }
@@ -75,6 +71,10 @@ declare module 'next/dist/lib/error-debug' {
 }
 
 declare module 'next/dist/lib/error' {
+  declare module.exports: any;
+}
+
+declare module 'next/dist/lib/EventEmitter' {
   declare module.exports: any;
 }
 
@@ -291,9 +291,6 @@ declare module 'next/dist/client/on-demand-entries-client.js' {
 declare module 'next/dist/client/webpack-hot-middleware-client.js' {
   declare module.exports: $Exports<'next/dist/client/webpack-hot-middleware-client'>;
 }
-declare module 'next/dist/lib/EventEmitter.js' {
-  declare module.exports: $Exports<'next/dist/lib/EventEmitter'>;
-}
 declare module 'next/dist/lib/app.js' {
   declare module.exports: $Exports<'next/dist/lib/app'>;
 }
@@ -308,6 +305,9 @@ declare module 'next/dist/lib/error-debug.js' {
 }
 declare module 'next/dist/lib/error.js' {
   declare module.exports: $Exports<'next/dist/lib/error'>;
+}
+declare module 'next/dist/lib/EventEmitter.js' {
+  declare module.exports: $Exports<'next/dist/lib/EventEmitter'>;
 }
 declare module 'next/dist/lib/head.js' {
   declare module.exports: $Exports<'next/dist/lib/head'>;

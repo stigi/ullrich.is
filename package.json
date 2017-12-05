@@ -16,7 +16,9 @@
     "export": "nextein build && nextein export",
     "deploy": "npm run export && now out --public",
     "analyze": "cross-env ANALYZE=1 nextein build",
-    "postinstall": "flow-typed install"
+    "postinstall": "npm run flow-typed-install",
+    "flow-typed-install": "flow-typed install -s -o -i dev bundle peer",
+    "flow-typed-createstub": "flow-typed create-stub -o"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.1",
