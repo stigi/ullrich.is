@@ -1,6 +1,5 @@
 // @flow
 import React, {Component} from 'react'
-import Link from 'nextein/link'
 import withLayout from '../components/Layout'
 import Bubble from '../components/Bubble'
 
@@ -59,12 +58,12 @@ class Index extends Component<any> {
         {/* <Bubble /> */}
       </div>
       <p>
-        I'm a mobile software engineer with <Link as="/experienced" href="/portfolio"><a>9 years of experience</a></Link> in the industry.
+        I'm a mobile software engineer with <a href="/experienced">9 years of experience</a> in the industry.
       </p>
       <p>
-        I'm available for <Link as="/here-to-help!" href="/hire-me"><a>contract work</a></Link>. Let's talk about what I can do for you.
+        I'm available for <a href="/here-to-help!">contract work</a>. Let's talk about what I can do for you.
       </p>
-      {/* <p>You can check out <Link as="/blogging" href="/blog"><a>my blog</a></Link> where I write about Swift, JavaScript, ReactNative and mobile in general.</p> */}
+      {/* <p>You can check out <a href="/blogging">my blog</a> where I write about Swift, JavaScript, ReactNative and mobile in general.</p> */}
       <p>✌️</p>
     </main>
   }

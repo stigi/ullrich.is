@@ -1,6 +1,5 @@
 // @flow
 import React from 'react'
-import Link from 'nextein/link'
 
 export default () => {
   return <footer>
@@ -15,10 +14,10 @@ export default () => {
       }
     `}</style>
     <p>
-      {/* This site was build with <Link href="https://reactjs.org"><a>React</a></Link> and <Link href="http://nextein.now.sh"><a>nextein</a></Link>.&nbsp; */}
-      <Link as="/official" href="/imprint"><a>Imprint</a></Link>
+      {/* This site was build with <a href="https://reactjs.org">React</a> and <a href="http://nextein.now.sh">nextein</a>.&nbsp; */}
+      <a href="/official">Imprint</a>
       &nbsp;| &nbsp;
-      <Link as="/reachable" href="/contact"><a>Contact</a></Link>
+      <a href="/reachable">Contact</a>
     </p>
   </footer>
 }

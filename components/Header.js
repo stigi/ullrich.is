@@ -1,6 +1,5 @@
 // @flow
 import React from 'react'
-import Link from 'nextein/link'
 
 type PropsType = {
   skipContent?: boolean,
@@ -56,13 +55,13 @@ export default ({skipContent = false}: PropsType) => {
       <div id="brand">
         <img id="logo" src="/static/logo-tiny.png" srcSet="/static/logo-tiny@2x.png 2x" />
         &nbsp;
-        <Link href="/"><a>ullrich.is</a></Link>
+        <a href="/">ullrich.is</a>
       </div> }
     {!skipContent &&
       <nav>
         <ul>
           <li>
-            <Link as="/reachable" href="/contact"><a>Contact</a></Link>
+            <a href="/reachable">Contact</a>
           </li>
         </ul>
       </nav>
