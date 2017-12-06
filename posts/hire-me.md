@@ -22,4 +22,4 @@ Here are some of the things I can help you and your team with:
 
     Tap my [years of experience](/experienced) in the field, working successfully in different settings from small startups to the scale of Facebook. Learn from the wins and failures I've seen me and others do over time. Let me suggest workflows and improvements to help your project excel.
 
-Interested in talking? I'm always [up for a meeting 📆](mailto:hi@ullrich.is?subject=Let's%20chat&amp;body=Hi%20Ullrich%20👋%0D%0A%0D) or to jump on the [phone 📱](tel:+491706164411).
+Interested in talking? I'm always [up for a meeting 📅](mailto:hi@ullrich.is?subject=Let's%20chat&amp;body=Hi%20Ullrich%20👋%0D%0A%0D) or to jump on the [phone 📲](tel:+491706164411).
