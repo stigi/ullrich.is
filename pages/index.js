@@ -2,6 +2,7 @@
 import React, {Component} from 'react'
 import withLayout from '../components/Layout'
 import Bubble from '../components/Bubble'
+import Link from 'next/link'
 
 class Index extends Component<any> {
   static async getInitialProps(...args) {
@@ -58,10 +59,10 @@ class Index extends Component<any> {
         {/* <Bubble /> */}
       </div>
       <p>
-        I'm a mobile software engineer with <a href="/experienced">9 years of experience</a> in the industry.
+        I'm a mobile software engineer with <Link as="/experienced" href="/portfolio" prefetch><a>9 years of experience</a></Link> in the industry.
       </p>
       <p>
-        I'm available for <a href="/here-to-help!">contract work</a>. Let's talk about what I can do for you.
+        I'm available for <Link as="/here-to-help!" href="/hire-me" prefetch><a>contract work</a></Link>. Let's talk about what I can do for you.
       </p>
       {/* <p>You can check out <a href="/blogging">my blog</a> where I write about Swift, JavaScript, ReactNative and mobile in general.</p> */}
       <p>✌️</p>
