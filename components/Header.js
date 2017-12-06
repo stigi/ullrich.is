@@ -42,12 +42,14 @@ export default ({skipContent = false}: PropsType) => {
       }
       #logo {
         height: 22px;
+        width: 20px;
         margin-left: 0.2rem;
         margin-right: 0.2rem;
       }
       @media (max-width: 768px) {
         #logo {
           height: 18px;
+          width: 16px;
         }
       }
     `}</style>
