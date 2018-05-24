@@ -17,6 +17,8 @@ export default () => {
       {/* This site was build with <a href="https://reactjs.org">React</a> and <a href="http://nextein.now.sh">nextein</a>.&nbsp; */}
       <a href="/official">Imprint</a>
       &nbsp;| &nbsp;
+      <a href="/legal">Privacy</a>
+      &nbsp;| &nbsp;
       <a href="/reachable">Contact</a>
     </p>
   </footer>

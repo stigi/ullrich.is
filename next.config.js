@@ -10,6 +10,7 @@ module.exports = nexteinConfig({
     '/experienced': { page: '/portfolio' },
     '/here-to-help!': { page: '/hire-me' },
     '/official': { page: '/imprint' },
+    '/legal': { page: '/privacy' },
     '/reachable': { page: '/contact' }
   }),
   webpack: function (config) {

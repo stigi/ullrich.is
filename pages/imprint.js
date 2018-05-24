@@ -6,21 +6,21 @@ const md = `
 
 Angaben gemäß § 5 TMG
 
-Ullrich Schäfer
-Ullrich Schäfer - Softwareentwicklung
-Mehringamm 87
-10965 Berlin
-Germany
+Ullrich Schäfer  
+Ullrich Schäfer - Softwareentwicklung  
+Mehringamm 87  
+10965 Berlin  
+Germany  
 
 ## Kontakt
 
-Telefon: [+49 (0) 170 6164411](tel:+491706164411)
-E-Mail: [imprint@ullrich.is](mailto:imprint@ullrich.is)
-Website: [http://ullrich.is](http://ullrich.is)
+Telefon: [+49 (0) 170 6164411](tel:+491706164411)  
+E-Mail: [imprint@ullrich.is](mailto:imprint@ullrich.is)  
+Website: [http://ullrich.is](http://ullrich.is)  
 
 ## Umsatzsteuer-ID
 
-Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz
+Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz  
 DE313487022
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
@@ -52,21 +52,21 @@ Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter [h
 
 Information in accordance with section 5 TMG
 
-Ullrich Schäfer
-Ullrich Schäfer - Software Development
-Mehringamm 87
-10965 Berlin
-Germany
+Ullrich Schäfer  
+Ullrich Schäfer - Software Development  
+Mehringamm 87  
+10965 Berlin  
+Germany  
 
 ## Contact
 
-Telephone: [+49 (0) 170 6164411](tel:+491706164411)
-E-Mail: [imprint@ullrich.is](mailto:imprint@ullrich.is)
-Website: [http://ullrich.is](http://ullrich.is)
+Telephone: [+49 (0) 170 6164411](tel:+491706164411)  
+E-Mail: [imprint@ullrich.is](mailto:imprint@ullrich.is)  
+Website: [http://ullrich.is](http://ullrich.is)  
 
 ## VAT number
 
-VAT indentification number in accorance with section 27 a of the German VAT act
+VAT indentification number in accorance with section 27 a of the German VAT act  
 DE313487022
 
 ## Person responsible for content in accordance with 55 Abs. 2 RStV
