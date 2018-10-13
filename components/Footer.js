@@ -10,7 +10,12 @@ export default () => {
         margin-top: 3rem;
       }
       a,p {
-        color: rgb(200, 200, 200);
+        color: rgb(155, 155, 155);
+      }
+      @media (prefers-dark-interface) {
+        a,p {
+          color: rgb(100, 100, 100);
+        }
       }
     `}</style>
     <p>

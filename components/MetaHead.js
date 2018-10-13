@@ -80,6 +80,15 @@ export default ({title = "ullrich.is ✌️" }: PropsType) => {
           font-size: 1rem;
           font-weight: 300;
         }
+        @media (prefers-dark-interface) {
+          html {
+            color: rgb(245, 245, 245);
+            background-color: rgb(40, 40, 40);
+          }
+          a {
+            color: rgb(245, 245, 245);
+          }
+        }
       `}
       </style>
       <Head>

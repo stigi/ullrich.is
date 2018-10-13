@@ -52,6 +52,11 @@ export default ({skipContent = false}: PropsType) => {
           width: 16px;
         }
       }
+      @media (prefers-dark-interface) {
+        a {
+          color: rgb(155,155,155);
+        }
+      }
     `}</style>
     { !skipContent &&
       <div id="brand">
