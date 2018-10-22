@@ -1,3 +1,5 @@
 import React from 'react'
 
-export default () => <div>Hello world!</div>
+
+const Layout = () => <div>Hello world!</div>
+export default Layout
