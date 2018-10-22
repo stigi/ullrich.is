@@ -11,6 +11,12 @@ module.exports = {
         name: `pages`,
         path: `${__dirname}/src/pages`
       }
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: `${__dirname}/src/favicon.png`
+      }
     }
   ]
 };
