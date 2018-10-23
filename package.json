@@ -5,7 +5,10 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "start": "gatsby serve",
+    "deploy": "gatsby build && now public",
+    "deploy:alias": "gatsby build && now public && now alias"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
@@ -30,6 +33,7 @@
   "devDependencies": {
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
-    "@types/styled-components": "^4.0.1"
+    "@types/styled-components": "^4.0.1",
+    "now": "^11.4.6"
   }
 }
