@@ -28,6 +28,15 @@ module.exports = {
       options: {
         logo: `${__dirname}/src/favicon.png`
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-10108913-2",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+      },
     }
   ]
 };
