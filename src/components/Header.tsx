@@ -1,5 +1,7 @@
+import Img from "gatsby-image";
 import React from "react";
 import styled from "styled-components";
+import HeaderLogo from "./HeaderLogo";
 
 interface Props {
   emptyHeader?: boolean;
@@ -11,17 +13,6 @@ const Header = styled.header`
   justify-content: space-between;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
-`;
-
-const Logo = styled.img`
-  height: 22px;
-  width: 20px;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
-  @media (max-width: 768px) {
-    height: 18px;
-    width: 16px;
-  }
 `;
 
 const Brand = styled.div`
@@ -49,10 +40,7 @@ const HeaderComponent = ({ emptyHeader }: Props) => (
     {!emptyHeader && (
       <>
         <Brand>
-          <Logo
-            src="/static/logo-tiny.png"
-            srcSet="/static/logo-tiny@2x.png 2x"
-          />
+          <HeaderLogo />
           &nbsp;
           <Link href="/">ullrich.is</Link>
         </Brand>{" "}

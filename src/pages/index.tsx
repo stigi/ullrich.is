@@ -19,7 +19,6 @@ const Hero = styled.div`
   margin-bottom: 3rem;
 `;
 
-
 const Heading = styled.h1`
   font-size: 36px;
   line-height: 1.4em;
