@@ -30,7 +30,7 @@ const Link = styled.a`
     border-bottom: 1px dashed;
     margin-bottom: 0px;
   }
-  @media (prefers-dark-interface) {
+  @media (prefers-color-scheme: dark) {
     color: rgb(155, 155, 155);
   }
 `;

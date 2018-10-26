@@ -9,14 +9,14 @@ const Footer = styled.footer`
 
 const FooterParagraph = styled.p`
   color: rgb(155, 155, 155);
-  @media (prefers-dark-interface) {
+  @media (prefers-color-scheme: dark) {
     color: rgb(100, 100, 100);
   }
 `;
 
 const FooterLink = styled.a`
   color: rgb(155, 155, 155);
-  @media (prefers-dark-interface) {
+  @media (prefers-color-scheme: dark) {
     color: rgb(100, 100, 100);
   }
 `;

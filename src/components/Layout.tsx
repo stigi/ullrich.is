@@ -79,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     font-weight: 300;
   }
-  @media (prefers-dark-interface) {
+  @media (prefers-color-scheme: dark) {
     html {
       color: rgb(245, 245, 245);
       background-color: rgb(40, 40, 40);
