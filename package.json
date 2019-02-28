@@ -7,7 +7,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "start": "gatsby serve",
-    "deploy": "gatsby build && now public",
+    "deploy": "gatsby build && gh-pages -r git@github.com:stigi/stigi.github.io.git -d public -b master",
     "deploy:alias": "gatsby build && now public && now alias",
     "now-build": "npm run build"
   },
