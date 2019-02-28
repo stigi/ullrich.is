@@ -35,6 +35,7 @@
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
     "@types/styled-components": "^4.0.1",
+    "gh-pages": "^2.0.1",
     "now": "^11.4.6"
   }
 }
