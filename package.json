@@ -8,7 +8,8 @@
     "serve": "gatsby serve",
     "start": "gatsby serve",
     "deploy": "gatsby build && now public",
-    "deploy:alias": "gatsby build && now public && now alias"
+    "deploy:alias": "gatsby build && now public && now alias",
+    "now-build": "npm run build"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
