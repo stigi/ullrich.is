@@ -6,10 +6,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "start": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -r git@github.com:stigi/stigi.github.io.git -d public -b master",
-    "deploy:alias": "gatsby build && now public && now alias",
-    "now-build": "npm run build"
+    "deploy:gh-pages": "gh-pages -r git@github.com:stigi/stigi.github.io.git -d public -b master",
+    "deploy": "npm-run-all build deploy:gh-pages"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
@@ -36,6 +34,6 @@
     "@types/react-dom": "^16.0.9",
     "@types/styled-components": "^4.0.1",
     "gh-pages": "^2.0.1",
-    "now": "^11.4.6"
+    "npm-run-all": "^4.1.5"
   }
 }
