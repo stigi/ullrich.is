@@ -1,5 +1,5 @@
 ---
-path: "/reachable"
+path: '/reachable'
 ---
 
 # 👋 Let's talk!

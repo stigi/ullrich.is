@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    name: `ullrich.is ✌️`
+    name: `ullrich.is ✌️`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -13,30 +13,30 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`
-      }
+        path: `${__dirname}/src/pages`,
+      },
     },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: `${__dirname}/src/favicon.png`
-      }
+        logo: `${__dirname}/src/favicon.png`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-10108913-2",
+        trackingId: 'UA-10108913-2',
         head: false,
         anonymize: true,
         respectDNT: true,
       },
-    }
-  ]
-};
+    },
+  ],
+}

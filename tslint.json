@@ -1,0 +1,33 @@
+{
+  // The rules are build on top of the recommended linter rules, together with the recommended rules
+  // for react which prevent some common perf issues.
+  // Some of the rules have been overruled because @ullrich finds them annoying :P
+  // We also use the prettier config which disables some rules that would conflict with prettier
+  // formatting.
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    // Enable these rules as soon as possible. They are just disabled because they need some effort to fix
+    "jsx-no-lambda": true,
+    "jsx-no-bind": true,
+
+    // Additional rules
+    "no-require-imports": true, // Nor part of recommend. Try to not use them. There's shouldn't really be a need
+
+    // Overruled from tslint:recommended
+    "interface-name": false, // TS interface names staring  with a I
+    "object-literal-sort-keys": false, // Sorting of keys should be up to the developer to allow for grouping
+    "member-access": false, // We don't want to mark everything private/public/protected. No one does that in React community.
+    "no-empty-interface": false, // We want empty interfaces so we can declare empty props
+    "ordered-imports": {
+      // custom ordered-imports to support grouping
+      "options": {
+        "import-sources-order": "case-insensitive",
+        "module-source-path": "full",
+        "named-imports-order": "case-insensitive",
+        "grouped-imports": true
+      }
+    },
+    "max-line-length": [true, 120],
+    "max-file-line-count": [true, 200] // Let's be civilized and not cramp to much code into one file
+  }
+}

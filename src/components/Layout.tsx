@@ -1,13 +1,13 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import styled, { createGlobalStyle } from 'styled-components';
+import React from 'react'
+import Helmet from 'react-helmet'
+import styled, { createGlobalStyle } from 'styled-components'
 
-import Footer from './Footer';
-import Header from './Header';
+import Footer from './Footer'
+import Header from './Header'
 
 interface Props {
   emptyHeader?: boolean
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 const GlobalStyle = createGlobalStyle`
@@ -88,7 +88,7 @@ const GlobalStyle = createGlobalStyle`
       color: rgb(245, 245, 245);
     }
   }
-`;
+`
 
 const LayoutComponent = styled.div`
   display: flex;
@@ -98,39 +98,35 @@ const LayoutComponent = styled.div`
   width: 35rem;
   max-width: 100vw;
   max-width: calc(100vw - 2.5rem);
-`;
+`
 
 const Layout = ({ emptyHeader = false, children }: Props) => (
   <LayoutComponent>
     <Helmet>
+      <title>What's Ullrich up to? 🤔</title>
       <meta charSet="utf-8" />
       <meta httpEquiv="content-language" content="en-us" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="author" content="Ullrich Schäfer" />
       <meta
         name="keywords"
+        // tslint:disable-next-line:max-line-length
         content="Ullrich Schäfer, Ullrich Schaefer, Ullrich Schafer, iOS, Objective-C, Swift, ReactNative, React, Javascript, ES6, Android, nxtbgthng, evenly, Facebook, Soundcloud, Arte, Digital Concert Hall"
       />
 
-      {/* <meta property='og:title' content={title} /> */}
+      <meta property="og:title" content={"What's Ullrich up to? 🤔"} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ullrich.is" />
       <meta property="og:url" content="http://ullrich.is" />
-      <meta
-        property="og:description"
-        content="Ullrich is a mobile software engineer and your best friend."
-      />
+      <meta property="og:description" content="Ullrich is a mobile software engineer and your best friend." />
       <meta property="og:image" content="http://ullrich.is/static/ulli.jpg" />
-      <meta
-        property="og:image:alt"
-        content="Ullrich wearing a cap, standing on the beach and blinking into the sun."
-      />
+      <meta property="og:image:alt" content="Ullrich wearing a cap, standing on the beach and blinking into the sun." />
     </Helmet>
     <GlobalStyle />
     <Header emptyHeader={emptyHeader} />
     {children}
     <Footer />
   </LayoutComponent>
-);
+)
 
-export default Layout;
+export default Layout

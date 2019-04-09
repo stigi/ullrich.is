@@ -1,9 +1,9 @@
 const path = require('path')
 
-exports.createPages = async ({graphql, actions}) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const pageTemplate = path.resolve('src/templates/pageTemplate.tsx') 
+  const pageTemplate = path.resolve('src/templates/pageTemplate.tsx')
 
   const result = await graphql(
     `
@@ -19,18 +19,16 @@ exports.createPages = async ({graphql, actions}) => {
           }
         }
       }
-      
     `
   )
   const pages = result.data.allMarkdownRemark.edges
 
-  pages.forEach(({node}) => {
+  pages.forEach(({ node }) => {
     const path = node.frontmatter.path
     createPage({
       path,
       component: pageTemplate,
-      context: { pathSlug: path}
+      context: { pathSlug: path },
     })
   })
 }
-

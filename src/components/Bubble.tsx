@@ -1,20 +1,15 @@
-import React from "react";
-
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const Speak = styled.div`
   transform: rotate(3deg);
-`;
+`
 
 const Shadow = styled.div`
   padding: 0px 3px 3px 1px;
 
   background: rgb(220, 220, 220); /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    rgb(220, 220, 220),
-    rgb(20, 20, 20)
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(220, 220, 220), rgb(20, 20, 20)); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     rgb(220, 220, 220),
@@ -24,7 +19,7 @@ const Shadow = styled.div`
   clip-path: url(#clip);
   -webkit-clip-path: url(#clip);
   -moz-clip-path: url(#clip);
-`;
+`
 
 const Bubble = styled.div`
   padding: 15px 15px 30px 15px; /* Accomodating for the clip path */
@@ -37,17 +32,17 @@ const Bubble = styled.div`
   clip-path: url(#clip);
   -webkit-clip-path: url(#clip);
   -moz-clip-path: url(#clip);
-`;
+`
 
 const Paragraph = styled.p`
   transform: rotate(-1deg);
-  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
   font-size: 1.5rem;
   color: white;
   @media (max-width: 768px) {
     font-size: 1rem;
   }
-`;
+`
 
 export default () => {
   return (
@@ -69,5 +64,5 @@ export default () => {
         </Shadow>
       </Speak>
     </div>
-  );
-};
+  )
+}
