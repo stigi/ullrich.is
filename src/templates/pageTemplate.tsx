@@ -1,25 +1,26 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
+import { graphql } from 'gatsby'
+import React from 'react'
 
-const Template = ({
-  data: {
-    markdownRemark: { html }
-  }
-}) => (
+import Layout from '../components/Layout'
+import { PageTemplateQuery } from '../generated/graphql'
+
+const Template = ({ data }: { data: PageTemplateQuery }) => (
   <Layout>
     <main>
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+      {data.markdownRemark && data.markdownRemark.html && (
+        <article dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      )}
+      }
     </main>
   </Layout>
-);
+)
 
 export const query = graphql`
-  query($pathSlug: String!) {
+  query PageTemplate($pathSlug: String!) {
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
     }
   }
-`;
+`
 
-export default Template;
+export default Template

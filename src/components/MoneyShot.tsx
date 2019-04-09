@@ -1,7 +1,9 @@
-import React from "react";
-import Img from "gatsby-image";
-import { StaticQuery, graphql } from "gatsby";
-import styled from "styled-components";
+import { graphql, StaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+import React from 'react'
+import styled from 'styled-components'
+
+import { MoneyShotQuery } from '../generated/graphql'
 
 const MoneyShot = styled(Img)`
   width: 150px;
@@ -14,17 +16,16 @@ const MoneyShot = styled(Img)`
     height: 90px;
     margin-right: 1.4rem;
   }
-`;
+`
+const render = (data: MoneyShotQuery) =>
+  data.file &&
+  data.file.childImageSharp &&
+  data.file.childImageSharp.fixed && <MoneyShot fixed={data.file.childImageSharp.fixed} />
 
-export default () => (
-  <StaticQuery
-    query={query}
-    render={data => <MoneyShot fixed={data.file.childImageSharp.fixed} />}
-  />
-);
+export default () => <StaticQuery query={query} render={render} />
 
 const query = graphql`
-  query {
+  query MoneyShot {
     file(relativePath: { eq: "ulli.jpg" }) {
       childImageSharp {
         fixed(width: 150) {
@@ -33,4 +34,4 @@ const query = graphql`
       }
     }
   }
-`;
+`

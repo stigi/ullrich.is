@@ -6,6 +6,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "graphql-types": "gql-gen --url http://localhost:8000/___graphql --template typescript --out ./src/graphql-types.d.ts",
     "deploy:gh-pages": "gh-pages -r git@github.com:stigi/stigi.github.io.git -d public -b master",
     "deploy": "npm-run-all build deploy:gh-pages"
   },
@@ -30,10 +31,15 @@
     "typescript": "^3.1.3"
   },
   "devDependencies": {
+    "@graphql-codegen/add": "^1.0.7",
+    "@graphql-codegen/cli": "^1.0.7",
+    "@graphql-codegen/typescript": "1.0.7",
+    "@graphql-codegen/typescript-operations": "1.0.7",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
     "@types/styled-components": "^4.0.1",
     "gh-pages": "^2.0.1",
+    "graphql": "^14.2.1",
     "npm-run-all": "^4.1.5"
   }
 }
