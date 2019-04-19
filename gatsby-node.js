@@ -8,12 +8,13 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       query {
-        allMarkdownRemark {
+        allFile(filter: { sourceInstanceName: { eq: "pages" } }) {
           edges {
             node {
-              frontmatter {
-                path
-                title
+              childMarkdownRemark {
+                frontmatter {
+                  path
+                }
               }
             }
           }
@@ -21,14 +22,17 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     `
   )
-  const pages = result.data.allMarkdownRemark.edges
+  const pages = result.data.allFile.edges
 
   pages.forEach(({ node }) => {
-    const path = node.frontmatter.path
-    createPage({
-      path,
-      component: pageTemplate,
-      context: { pathSlug: path },
-    })
+    const maybeMarkdown = node.childMarkdownRemark
+    if (maybeMarkdown) {
+      const path = maybeMarkdown.frontmatter.path
+      createPage({
+        path,
+        component: pageTemplate,
+        context: { pathSlug: path },
+      })
+    }
   })
 }
