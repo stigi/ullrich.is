@@ -12,7 +12,7 @@ Angaben gemäß § 5 TMG
 
 Ullrich Schäfer  
 Ullrich Schäfer - Softwareentwicklung  
-Mehringamm 87  
+Mehringdamm 87  
 10965 Berlin  
 Germany
 
