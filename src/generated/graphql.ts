@@ -2807,6 +2807,16 @@ export type Frontmatter_2 = {
   title?: Maybe<Scalars['String']>
   path?: Maybe<Scalars['String']>
   _PARENT?: Maybe<Scalars['String']>
+  description?: Maybe<Scalars['String']>
+  date?: Maybe<Scalars['Date']>
+  image?: Maybe<Scalars['String']>
+}
+
+export type Frontmatter_2DateArgs = {
+  formatString?: Maybe<Scalars['String']>
+  fromNow?: Maybe<Scalars['Boolean']>
+  difference?: Maybe<Scalars['String']>
+  locale?: Maybe<Scalars['String']>
 }
 
 export enum HeadingLevels {
@@ -3425,10 +3435,40 @@ export type MarkdownRemarkConnectionFileAbsolutePathQueryString_2 = {
   nin?: Maybe<Array<Maybe<Scalars['String']>>>
 }
 
+export type MarkdownRemarkConnectionFrontmatterDateQueryString_2 = {
+  eq?: Maybe<Scalars['String']>
+  ne?: Maybe<Scalars['String']>
+  regex?: Maybe<Scalars['String']>
+  glob?: Maybe<Scalars['String']>
+  in?: Maybe<Array<Maybe<Scalars['String']>>>
+  nin?: Maybe<Array<Maybe<Scalars['String']>>>
+}
+
+export type MarkdownRemarkConnectionFrontmatterDescriptionQueryString_2 = {
+  eq?: Maybe<Scalars['String']>
+  ne?: Maybe<Scalars['String']>
+  regex?: Maybe<Scalars['String']>
+  glob?: Maybe<Scalars['String']>
+  in?: Maybe<Array<Maybe<Scalars['String']>>>
+  nin?: Maybe<Array<Maybe<Scalars['String']>>>
+}
+
+export type MarkdownRemarkConnectionFrontmatterImageQueryString_2 = {
+  eq?: Maybe<Scalars['String']>
+  ne?: Maybe<Scalars['String']>
+  regex?: Maybe<Scalars['String']>
+  glob?: Maybe<Scalars['String']>
+  in?: Maybe<Array<Maybe<Scalars['String']>>>
+  nin?: Maybe<Array<Maybe<Scalars['String']>>>
+}
+
 export type MarkdownRemarkConnectionFrontmatterInputObject_2 = {
   title?: Maybe<MarkdownRemarkConnectionFrontmatterTitleQueryString_2>
   path?: Maybe<MarkdownRemarkConnectionFrontmatterPathQueryString_2>
   _PARENT?: Maybe<MarkdownRemarkConnectionFrontmatterParentQueryString_2>
+  description?: Maybe<MarkdownRemarkConnectionFrontmatterDescriptionQueryString_2>
+  date?: Maybe<MarkdownRemarkConnectionFrontmatterDateQueryString_2>
+  image?: Maybe<MarkdownRemarkConnectionFrontmatterImageQueryString_2>
 }
 
 export type MarkdownRemarkConnectionFrontmatterParentQueryString_2 = {
@@ -3534,6 +3574,9 @@ export enum MarkdownRemarkConnectionSortByFieldsEnum {
   FrontmatterTitle = 'frontmatter___title',
   FrontmatterPath = 'frontmatter___path',
   FrontmatterParent = 'frontmatter____PARENT',
+  FrontmatterDescription = 'frontmatter___description',
+  FrontmatterDate = 'frontmatter___date',
+  FrontmatterImage = 'frontmatter___image',
   Excerpt = 'excerpt',
   RawMarkdownBody = 'rawMarkdownBody',
   FileAbsolutePath = 'fileAbsolutePath',
@@ -3561,6 +3604,9 @@ export enum MarkdownRemarkDistinctEnum {
   FrontmatterTitle = 'frontmatter___title',
   FrontmatterPath = 'frontmatter___path',
   FrontmatterParent = 'frontmatter____PARENT',
+  FrontmatterDescription = 'frontmatter___description',
+  FrontmatterDate = 'frontmatter___date',
+  FrontmatterImage = 'frontmatter___image',
   Excerpt = 'excerpt',
   RawMarkdownBody = 'rawMarkdownBody',
   FileAbsolutePath = 'fileAbsolutePath',
@@ -3585,10 +3631,40 @@ export type MarkdownRemarkFileAbsolutePathQueryString_2 = {
   nin?: Maybe<Array<Maybe<Scalars['String']>>>
 }
 
+export type MarkdownRemarkFrontmatterDateQueryString_2 = {
+  eq?: Maybe<Scalars['String']>
+  ne?: Maybe<Scalars['String']>
+  regex?: Maybe<Scalars['String']>
+  glob?: Maybe<Scalars['String']>
+  in?: Maybe<Array<Maybe<Scalars['String']>>>
+  nin?: Maybe<Array<Maybe<Scalars['String']>>>
+}
+
+export type MarkdownRemarkFrontmatterDescriptionQueryString_2 = {
+  eq?: Maybe<Scalars['String']>
+  ne?: Maybe<Scalars['String']>
+  regex?: Maybe<Scalars['String']>
+  glob?: Maybe<Scalars['String']>
+  in?: Maybe<Array<Maybe<Scalars['String']>>>
+  nin?: Maybe<Array<Maybe<Scalars['String']>>>
+}
+
+export type MarkdownRemarkFrontmatterImageQueryString_2 = {
+  eq?: Maybe<Scalars['String']>
+  ne?: Maybe<Scalars['String']>
+  regex?: Maybe<Scalars['String']>
+  glob?: Maybe<Scalars['String']>
+  in?: Maybe<Array<Maybe<Scalars['String']>>>
+  nin?: Maybe<Array<Maybe<Scalars['String']>>>
+}
+
 export type MarkdownRemarkFrontmatterInputObject_2 = {
   title?: Maybe<MarkdownRemarkFrontmatterTitleQueryString_2>
   path?: Maybe<MarkdownRemarkFrontmatterPathQueryString_2>
   _PARENT?: Maybe<MarkdownRemarkFrontmatterParentQueryString_2>
+  description?: Maybe<MarkdownRemarkFrontmatterDescriptionQueryString_2>
+  date?: Maybe<MarkdownRemarkFrontmatterDateQueryString_2>
+  image?: Maybe<MarkdownRemarkFrontmatterImageQueryString_2>
 }
 
 export type MarkdownRemarkFrontmatterParentQueryString_2 = {
@@ -3649,6 +3725,9 @@ export enum MarkdownRemarkGroupEnum {
   FrontmatterTitle = 'frontmatter___title',
   FrontmatterPath = 'frontmatter___path',
   FrontmatterParent = 'frontmatter____PARENT',
+  FrontmatterDescription = 'frontmatter___description',
+  FrontmatterDate = 'frontmatter___date',
+  FrontmatterImage = 'frontmatter___image',
   Excerpt = 'excerpt',
   RawMarkdownBody = 'rawMarkdownBody',
   FileAbsolutePath = 'fileAbsolutePath',
@@ -6946,6 +7025,32 @@ export type MoneyShotQuery = { __typename?: 'Query' } & {
         { __typename?: 'ImageSharp' } & {
           fixed: Maybe<{ __typename?: 'ImageSharpFixed' } & GatsbyImageSharpFixedFragment>
         }
+      >
+    }
+  >
+}
+
+export type ContentPagesMarkdownQueryVariables = {}
+
+export type ContentPagesMarkdownQuery = { __typename?: 'Query' } & {
+  allFile: Maybe<
+    { __typename?: 'FileConnection' } & {
+      edges: Maybe<
+        Array<
+          Maybe<
+            { __typename?: 'FileEdge' } & {
+              node: Maybe<
+                { __typename?: 'File' } & {
+                  childMarkdownRemark: Maybe<
+                    { __typename?: 'MarkdownRemark' } & {
+                      frontmatter: Maybe<{ __typename?: 'frontmatter_2' } & Pick<Frontmatter_2, 'path'>>
+                    }
+                  >
+                }
+              >
+            }
+          >
+        >
       >
     }
   >

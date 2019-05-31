@@ -1,3 +1,8 @@
+'use strict'
+
+require('source-map-support').install()
+require('ts-node').register({})
+
 module.exports = {
   siteMetadata: {
     name: `ullrich.is ✌️`,
