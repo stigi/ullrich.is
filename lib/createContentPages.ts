@@ -7,7 +7,12 @@ import { CreatePagesOptions } from './types'
 export const createContentPages = async ({ graphql, boundActionCreators: { createPage } }: CreatePagesOptions) => {
   const pageTemplate = resolve('src/templates/pageTemplate.tsx')
 
-  const allMarkdown: { data: ContentPagesMarkdownQuery } = await graphql(`
+  const allMarkdown: {
+    data: ContentPagesMarkdownQuery
+  } = await graphql(//
+  // Using GraphQL magic comment, because we don't compile the query here i.e. graphql`...` but
+  // execute it right away i.e. graphql(`...`), so codegen does recognize this query
+  /* GraphQL */ `
     query ContentPagesMarkdown {
       allFile(filter: { sourceInstanceName: { eq: "pages" }, ext: { eq: ".md" } }) {
         edges {

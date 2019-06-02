@@ -1,8 +1,9 @@
 overwrite: true
 schema: 'http://localhost:8000/___graphql'
 documents:
-  - 'src/**/*.{js,jsx,ts,tsx}'
-  - 'node_modules/gatsby-transformer-sharp/**/*.{js,jsx,ts,tsx}'
+  - './lib/**/*.{js,jsx,ts,tsx}'
+  - './src/**/*.{js,jsx,ts,tsx}'
+  - './node_modules/gatsby-*/**/*.js'
 generates:
   src/generated/graphql.ts:
     plugins:

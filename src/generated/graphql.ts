@@ -7002,6 +7002,32 @@ export type WordCountWordsQueryInt_4 = {
   in?: Maybe<Array<Maybe<Scalars['Int']>>>
   nin?: Maybe<Array<Maybe<Scalars['Int']>>>
 }
+export type ContentPagesMarkdownQueryVariables = {}
+
+export type ContentPagesMarkdownQuery = { __typename?: 'Query' } & {
+  allFile: Maybe<
+    { __typename?: 'FileConnection' } & {
+      edges: Maybe<
+        Array<
+          Maybe<
+            { __typename?: 'FileEdge' } & {
+              node: Maybe<
+                { __typename?: 'File' } & {
+                  childMarkdownRemark: Maybe<
+                    { __typename?: 'MarkdownRemark' } & {
+                      frontmatter: Maybe<{ __typename?: 'frontmatter_2' } & Pick<Frontmatter_2, 'path'>>
+                    }
+                  >
+                }
+              >
+            }
+          >
+        >
+      >
+    }
+  >
+}
+
 export type HeaderLogoQueryVariables = {}
 
 export type HeaderLogoQuery = { __typename?: 'Query' } & {
@@ -7030,30 +7056,12 @@ export type MoneyShotQuery = { __typename?: 'Query' } & {
   >
 }
 
-export type ContentPagesMarkdownQueryVariables = {}
+export type PostTemplateQueryVariables = {
+  pathSlug: Scalars['String']
+}
 
-export type ContentPagesMarkdownQuery = { __typename?: 'Query' } & {
-  allFile: Maybe<
-    { __typename?: 'FileConnection' } & {
-      edges: Maybe<
-        Array<
-          Maybe<
-            { __typename?: 'FileEdge' } & {
-              node: Maybe<
-                { __typename?: 'File' } & {
-                  childMarkdownRemark: Maybe<
-                    { __typename?: 'MarkdownRemark' } & {
-                      frontmatter: Maybe<{ __typename?: 'frontmatter_2' } & Pick<Frontmatter_2, 'path'>>
-                    }
-                  >
-                }
-              >
-            }
-          >
-        >
-      >
-    }
-  >
+export type PostTemplateQuery = { __typename?: 'Query' } & {
+  markdownRemark: Maybe<{ __typename?: 'MarkdownRemark' } & Pick<MarkdownRemark, 'html'>>
 }
 
 export type PageTemplateQueryVariables = {
