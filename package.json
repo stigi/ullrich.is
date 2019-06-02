@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "ullrich.is",
+  "description": "ullrich.is based on Gatsby",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
+    "develop": "ts-node ./node_modules/.bin/gatsby develop",
+    "build": "ts-node ./node_modules/.bin/gatsby build",
+    "serve": "ts-node ./node_modules/.bin/gatsby serve",
     "graphql-types": "gql-gen --url http://localhost:8000/___graphql --template typescript --out ./src/graphql-types.d.ts",
     "deploy:gh-pages": "gh-pages -r git@github.com:stigi/stigi.github.io.git -d public -b master",
     "deploy": "npm-run-all build deploy:gh-pages",
@@ -52,8 +52,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0",
-    "source-map-support": "^0.5.12",
-    "ts-node": "^8.1.0",
+    "ts-node": "^8.2.0",
     "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^4.0.0"

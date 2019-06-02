@@ -23,13 +23,22 @@ export const createContentPages = async ({ graphql, boundActionCreators: { creat
     }
   `)
 
-  const pages = allMarkdown.data.allFile.edges || []
-  pages.forEach(edge => {
-    const { path } = edge.node.childMarkdownRemark.frontmatter
-    createPage({
-      path,
-      component: pageTemplate,
-      context: { pathSlug: path },
+  if (allMarkdown.data.allFile && allMarkdown.data.allFile.edges) {
+    allMarkdown.data.allFile.edges.forEach(edge => {
+      if (
+        edge &&
+        edge.node &&
+        edge.node.childMarkdownRemark &&
+        edge.node.childMarkdownRemark.frontmatter &&
+        edge.node.childMarkdownRemark.frontmatter.path
+      ) {
+        const path = edge.node.childMarkdownRemark.frontmatter.path
+        createPage({
+          path,
+          component: pageTemplate,
+          context: { pathSlug: path },
+        })
+      }
     })
-  })
+  }
 }
