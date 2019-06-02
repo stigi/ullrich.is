@@ -10,3 +10,5 @@ generates:
       - add: '/* tslint:disable */'
       - 'typescript'
       - 'typescript-operations'
+    config:
+      avoidOptionals: true
