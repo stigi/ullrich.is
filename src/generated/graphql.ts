@@ -7002,6 +7002,32 @@ export type WordCountWordsQueryInt_4 = {
   in: Maybe<Array<Maybe<Scalars['Int']>>>
   nin: Maybe<Array<Maybe<Scalars['Int']>>>
 }
+export type BlogPostsMarkdownQueryVariables = {}
+
+export type BlogPostsMarkdownQuery = { __typename?: 'Query' } & {
+  allFile: Maybe<
+    { __typename?: 'FileConnection' } & {
+      edges: Maybe<
+        Array<
+          Maybe<
+            { __typename?: 'FileEdge' } & {
+              node: Maybe<
+                { __typename?: 'File' } & {
+                  childMarkdownRemark: Maybe<
+                    { __typename?: 'MarkdownRemark' } & {
+                      frontmatter: Maybe<{ __typename?: 'frontmatter_2' } & Pick<Frontmatter_2, 'path'>>
+                    }
+                  >
+                }
+              >
+            }
+          >
+        >
+      >
+    }
+  >
+}
+
 export type ContentPagesMarkdownQueryVariables = {}
 
 export type ContentPagesMarkdownQuery = { __typename?: 'Query' } & {
@@ -7051,6 +7077,34 @@ export type MoneyShotQuery = { __typename?: 'Query' } & {
         { __typename?: 'ImageSharp' } & {
           fixed: Maybe<{ __typename?: 'ImageSharpFixed' } & GatsbyImageSharpFixedFragment>
         }
+      >
+    }
+  >
+}
+
+export type BlogIndexPostFragment = { __typename?: 'File' } & {
+  childMarkdownRemark: Maybe<
+    { __typename?: 'MarkdownRemark' } & {
+      frontmatter: Maybe<
+        { __typename?: 'frontmatter_2' } & Pick<Frontmatter_2, 'title' | 'path' | 'date' | 'description'>
+      >
+    }
+  >
+}
+
+export type BlogIndexQueryVariables = {}
+
+export type BlogIndexQuery = { __typename?: 'Query' } & {
+  allFile: Maybe<
+    { __typename?: 'FileConnection' } & {
+      edges: Maybe<
+        Array<
+          Maybe<
+            { __typename?: 'FileEdge' } & {
+              node: Maybe<{ __typename?: 'File' } & Pick<File, 'id'> & BlogIndexPostFragment>
+            }
+          >
+        >
       >
     }
   >
