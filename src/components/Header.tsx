@@ -47,6 +47,9 @@ const HeaderComponent = ({ emptyHeader }: Props) => (
         <nav>
           <ul style={{ display: 'inline' }}>
             <li style={{ display: 'inline', margin: '8pt' }}>
+              <Link href="/blogging">Blog</Link>
+            </li>
+            <li style={{ display: 'inline', margin: '8pt' }}>
               <Link href="/reachable">Contact</Link>
             </li>
           </ul>

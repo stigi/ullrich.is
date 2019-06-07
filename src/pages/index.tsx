@@ -65,12 +65,10 @@ export default () => (
           and build an app for a tiny startup called <a href="https://soundcloud.com">SoundCloud</a>.
         </Paragraph>
       )}
-      {false && (
-        <Paragraph>
-          You can check out <a href="/blogging">my blog</a> where I write about Swift, JavaScript, ReactNative and
-          mobile in general.
-        </Paragraph>
-      )}
+      <Paragraph>
+        You can check out <a href="/blogging">my blog</a> where I write about Swift, TypeScript, React-Native and mobile
+        development in general.
+      </Paragraph>
       <Paragraph>✌️</Paragraph>
     </main>
   </Layout>
