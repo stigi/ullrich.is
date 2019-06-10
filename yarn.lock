@@ -929,6 +929,16 @@
     import-from "2.1.0"
     tslib "1.9.3"
 
+"@graphql-codegen/plugin-helpers@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.2.1.tgz#ecda83e38fe44b46a0d415b3dd91d3a1342a56a6"
+  integrity sha512-iymI6pZ9c46vAK8sDSQ+NP/fPMi0/46xtSsXK/QmRkVkRSxU2RtmXsFY2q04WT91C08/wRSTQLta8jkktg8yKg==
+  dependencies:
+    change-case "3.1.0"
+    common-tags "1.8.0"
+    import-from "3.0.0"
+    tslib "1.9.3"
+
 "@graphql-codegen/typescript-operations@1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-operations/-/typescript-operations-1.0.7.tgz#b04ffe35feac000ac7e0fcd71f646cfb0e2f0754"
@@ -948,12 +958,32 @@
     "@graphql-codegen/visitor-plugin-common" "1.0.7"
     tslib "1.9.3"
 
+"@graphql-codegen/typescript@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript/-/typescript-1.2.1.tgz#9da55b8e1e34d4a8e935d043a09724b2a388c825"
+  integrity sha512-ZR75QTsiCmb0kX8s/rBp28tPNnvl0Ldj/VTacrPWwAw3uDWM/ICXz4a+ETjfyKk+xvPnIbvgvyJI0XgaHagnyg==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "1.2.1"
+    "@graphql-codegen/visitor-plugin-common" "1.2.1"
+    tslib "1.9.3"
+
 "@graphql-codegen/visitor-plugin-common@1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/visitor-plugin-common/-/visitor-plugin-common-1.0.7.tgz#4017af7fe0d0e6d6d0d891661a15c5169f898cd2"
   integrity sha512-MN/ZKywNR2pVDQOKgEyz79X7Inm4qpinR+ktoO05tRrqL216niLLKHILNoRDxkuLq/T4hNFFNiP8kdlx+frnAQ==
   dependencies:
     "@graphql-codegen/plugin-helpers" "1.0.7"
+    auto-bind "2.0.0"
+    dependency-graph "0.8.0"
+    graphql-tag "2.10.1"
+    tslib "1.9.3"
+
+"@graphql-codegen/visitor-plugin-common@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/visitor-plugin-common/-/visitor-plugin-common-1.2.1.tgz#4a89817c8bfd5d5a576caadd7f4bc32bace01c1f"
+  integrity sha512-06BDV0qCP+EBaXfIXQOxLBom+SDKSJoJjKO9sc1oV6pfCy5F8qH5QsTt++HaWh0qwZ11w4HGjoL6nf8X4f9tAg==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "1.2.1"
     auto-bind "2.0.0"
     dependency-graph "0.8.0"
     graphql-tag "2.10.1"
@@ -7540,6 +7570,13 @@ import-from@2.1.0, import-from@^2.1.0:
   dependencies:
     resolve-from "^3.0.0"
 
+import-from@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/import-from/-/import-from-3.0.0.tgz#055cfec38cd5a27d8057ca51376d7d3bf0891966"
+  integrity sha512-CiuXOFFSzkU5x/CR0+z7T91Iht4CXgfCxVOFRhh2Zyhg5wOpWvvDLQUsWl+gcN+QscYBjez8hDCt85O7RLDttQ==
+  dependencies:
+    resolve-from "^5.0.0"
+
 import-lazy@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/import-lazy/-/import-lazy-2.1.0.tgz#05698e3d45c88e8d7e9d92cb0584e77f096f3e43"
@@ -11939,6 +11976,11 @@ resolve-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
   integrity sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
+
+resolve-from@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
+  integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
 
 resolve-url@^0.2.1:
   version "0.2.1"
