@@ -7,10 +7,11 @@ import { PostTemplateQuery } from '../generated/graphql'
 const Template = ({ data }: { data: PostTemplateQuery }) => (
   <Layout>
     <main>
-      {data.markdownRemark && data.markdownRemark.html && (
-        <article dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-      )}
-      }
+      <article>
+        <h1>{data.markdownRemark!.frontmatter!.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark!.html! }} />
+        <small>Written on {data.markdownRemark!.frontmatter!.date}</small>
+      </article>
     </main>
   </Layout>
 )
@@ -18,6 +19,10 @@ const Template = ({ data }: { data: PostTemplateQuery }) => (
 export const query = graphql`
   query PostTemplate($pathSlug: String!) {
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
+      frontmatter {
+        title
+        date
+      }
       html
     }
   }

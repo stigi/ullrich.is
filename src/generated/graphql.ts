@@ -7115,7 +7115,11 @@ export type PostTemplateQueryVariables = {
 }
 
 export type PostTemplateQuery = { __typename?: 'Query' } & {
-  markdownRemark: Maybe<{ __typename?: 'MarkdownRemark' } & Pick<MarkdownRemark, 'html'>>
+  markdownRemark: Maybe<
+    { __typename?: 'MarkdownRemark' } & Pick<MarkdownRemark, 'html'> & {
+        frontmatter: Maybe<{ __typename?: 'frontmatter_2' } & Pick<Frontmatter_2, 'title' | 'date'>>
+      }
+  >
 }
 
 export type PageTemplateQueryVariables = {
