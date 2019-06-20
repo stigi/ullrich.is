@@ -10,7 +10,6 @@ const Template = ({ data }: { data: PageTemplateQuery }) => (
       {data.markdownRemark && data.markdownRemark.html && (
         <article dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       )}
-      }
     </main>
   </Layout>
 )
