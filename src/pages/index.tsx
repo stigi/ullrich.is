@@ -43,7 +43,7 @@ export default () => (
       <Paragraph>
         I'm a mobile software engineer with{' '}
         <Link to="/experienced">
-          <a>9 years of experience</a>
+          <a>10 years of experience</a>
         </Link>{' '}
         in the industry.
       </Paragraph>
