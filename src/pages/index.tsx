@@ -57,9 +57,9 @@ export default () => (
         </Paragraph>
       ) : (
         <Paragraph>
-          I am currently working at <a href="http://evenly.io">evenly</a> as their head of engineering.
+          I am currently working at <a href="http://pitch.io">Pitch</a>, building our mobile app.
           <br />
-          Before that I was part of Facebooks Newsfeed team, co-founded <a href="https://nxtbgthng.com">
+            Before that I was Head of Engineering at <a href="http://evenly.io">evenly</a>, part of Facebooks Newsfeed team, co-founded <a href="https://nxtbgthng.com">
             nxtbgthng
           </a>{' '}
           and build an app for a tiny startup called <a href="https://soundcloud.com">SoundCloud</a>.

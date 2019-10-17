@@ -111,7 +111,7 @@ const Layout = ({ emptyHeader = false, children }: Props) => (
       <meta
         name="keywords"
         // tslint:disable-next-line:max-line-length
-        content="Ullrich Schäfer, Ullrich Schaefer, Ullrich Schafer, iOS, Objective-C, Swift, ReactNative, React, Javascript, ES6, Android, nxtbgthng, evenly, Facebook, Soundcloud, Arte, Digital Concert Hall"
+        content="Ullrich Schäfer, Ullrich Schaefer, Ullrich Schafer, iOS, Objective-C, Swift, ReactNative, React, Javascript, ES6, Android, pitch, pitch.io, nxtbgthng, evenly, Facebook, Soundcloud, Arte, Digital Concert Hall"
       />
 
       <meta property="og:title" content={"What's Ullrich up to? 🤔"} />
