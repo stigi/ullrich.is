@@ -62,7 +62,7 @@ export default () => (
             Before that I was Head of Engineering at <a href="http://evenly.io">evenly</a>, part of Facebooks Newsfeed team, co-founded <a href="https://nxtbgthng.com">
             nxtbgthng
           </a>{' '}
-          and build an app for a tiny startup called <a href="https://soundcloud.com">SoundCloud</a>.
+          and built an app for a tiny startup called <a href="https://soundcloud.com">SoundCloud</a>.
         </Paragraph>
       )}
       {false && (
