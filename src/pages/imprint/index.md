@@ -18,8 +18,7 @@ Germany
 
 ## Kontakt
 
-Telefon: [+49 (0) 170 6164411](tel:+491706164411)  
-E-Mail: [imprint@ullrich.is](mailto:imprint@ullrich.is)  
+E-Mail: [imprint@ullrich.is](mailto:imprint@ullrich.is)
 Website: [http://ullrich.is](http://ullrich.is)
 
 ## Umsatzsteuer-ID
@@ -68,8 +67,7 @@ Germany
 
 ## Contact
 
-Telephone: [+49 (0) 170 6164411](tel:+491706164411)  
-E-Mail: [imprint@ullrich.is](mailto:imprint@ullrich.is)  
+E-Mail: [imprint@ullrich.is](mailto:imprint@ullrich.is)
 Website: [http://ullrich.is](http://ullrich.is)
 
 ## VAT number

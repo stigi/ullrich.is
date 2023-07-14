@@ -74,8 +74,7 @@ Mehringdamm 87
 10965 Berlin  
 Deutschland
 
-Phone: +491706164411  
-Email: imprint@ullrich.is  
+Email: imprint@ullrich.is
 Website: http://ullrich.is
 
 ## 3. Cookies
@@ -361,8 +360,7 @@ Mehringdamm 87
 10965 Berlin  
 Deutschland
 
-Phone: +491706164411  
-Email: imprint@ullrich.is  
+Email: imprint@ullrich.is
 Website: http://ullrich.is
 
 # 3. Cookies
