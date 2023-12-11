@@ -124,6 +124,10 @@ const Layout = ({ emptyHeader = false, children }: Props) => (
       <link rel="self" href="https://ullrich.is/" />
       <link rel="me" href="https://toot.cat/@ullrich" />
       <link rel="me" href="https://github.com/stigi" />
+      <link rel="me" href="https://gravatar.com/stigi" />
+      <link rel="me" href="https://linkedin.com/in/ullrichschaefer" />
+      <link rel="me" href="https://facebook.com/ullrich" />
+      <link rel="me" href="https://instagram.com/stigi" />
       <link rel="me" href="https://twitter.com/stigi" />
       <link rel="me" href="https://x.com/stigi" />
     </Helmet>
