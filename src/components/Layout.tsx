@@ -122,6 +122,7 @@ const Layout = ({ emptyHeader = false, children }: Props) => (
       <meta property="og:image" content="http://ullrich.is/static/ulli.jpg" />
       <meta property="og:image:alt" content="Ullrich wearing a cap, standing on the beach and blinking into the sun." />
       <link rel="self" href="https://ullrich.is/" />
+      <link rel="webmention" href="https://webmention.io/ullrich.is/webmention" />
       <link rel="me" href="https://toot.cat/@ullrich" />
       <link rel="me" href="https://github.com/stigi" />
       <link rel="me" href="https://gravatar.com/stigi" />
