@@ -121,6 +121,11 @@ const Layout = ({ emptyHeader = false, children }: Props) => (
       <meta property="og:description" content="Ullrich is a mobile software engineer and your best friend." />
       <meta property="og:image" content="http://ullrich.is/static/ulli.jpg" />
       <meta property="og:image:alt" content="Ullrich wearing a cap, standing on the beach and blinking into the sun." />
+      <link rel="self" href="https://ullrich.is/" />
+      <link rel="me" href="https://toot.cat/@ullrich" />
+      <link rel="me" href="https://github.com/stigi" />
+      <link rel="me" href="https://twitter.com/stigi" />
+      <link rel="me" href="https://x.com/stigi" />
     </Helmet>
     <GlobalStyle />
     <Header emptyHeader={emptyHeader} />
